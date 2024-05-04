@@ -77,6 +77,10 @@ public class PINGClient {
 		}
 	
 // This is the main method which instantiates the ping Client
+	/**
+        * This is a javadoc comment
+	* 
+	*/
 public static void main(String argv[]) throws Exception
 	{
 		// socket variables
