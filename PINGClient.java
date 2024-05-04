@@ -2,6 +2,7 @@ import java.io.*;
 import java.net.*;
 import java.nio.ByteBuffer;
 import java.sql.Date;
+
 import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -75,7 +76,8 @@ public class PINGClient {
 			return ByteBuffer.wrap(value).get();
 		}
 	
-	public static void main(String argv[]) throws Exception
+// This is the main method which instantiates the ping Client
+public static void main(String argv[]) throws Exception
 	{
 		// socket variables
 		DatagramSocket clientSocket;
@@ -228,9 +230,6 @@ public class PINGClient {
 			System.out.println("User-name: Goyal, Nupur");
 			System.out.println("Rest: " + rest);
 			System.out.println("-------------------------------------");
-			System.out.println();
-			
-			
 			// Create packet and send to server
 			sendPacket = new DatagramPacket(sendData, sendData.length,  
 				IPAddress, port);
